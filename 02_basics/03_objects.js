@@ -1,4 +1,9 @@
-// singleton
+/* Object declaration ka do tarikhe hai- 
+    1. literal ka tarah
+    2. constructor ki tarah  */
+/* singleton 
+- object ko jab 'literal' ki tarah declaration katrte, tab 'singleton' nhi banta    
+- object ko jab 'constructor' ki tarah declaration katrte, tab 'singleton' nhi banta     */
 // Object.create
 
 // object literals
@@ -7,12 +12,12 @@ const mySym = Symbol("key1")
 
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
+    name: "Sudip",
+    "full name": "Sudip Raut",
     [mySym]: "mykey1",
     age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
+    location: "Kolkata",
+    email: "sudip@google.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
@@ -22,9 +27,9 @@ const JsUser = {
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 
-JsUser.email = "hitesh@chatgpt.com"
+JsUser.email = "sudip@chatgpt.com"
 // Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
+JsUser.email = "sudip@microsoft.com"
 // console.log(JsUser);
 
 JsUser.greeting = function(){
