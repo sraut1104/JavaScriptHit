@@ -1,6 +1,8 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+// How to do singleton an object or how to define an object with the help of constructor
+// const tinderUser = new Object() //Singleton Object
+const tinderUser = {} //Non-Singleton Object
 
+// Adding keys to the object
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
