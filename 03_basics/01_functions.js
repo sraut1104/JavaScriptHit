@@ -1,19 +1,29 @@
 
+// Function Defination
 function sayMyName(){
-    console.log("H");
-    console.log("I");
-    console.log("T");
-    console.log("E");
     console.log("S");
-    console.log("H");
+    console.log("U");
+    console.log("D");
+    console.log("I");
+    console.log("P");
 }
 
-// sayMyName()
+///Function Execution
+// sayMyName()  /// where sayMyName == referance and () == Execution
 
-// function addTwoNumbers(number1, number2){
 
-//     console.log(number1 + number2);
-// }
+function Ex1addTwoNumbers(number1, number2){ // Here number1 & number2 == parameters
+ 
+    console.log(number1 + number2);
+}
+// Ex1addTwoNumbers(); //NaN will print
+// Ex1addTwoNumbers(3, 4); // 3 & 4 == arguments and // 7 will print
+// Ex1addTwoNumbers(3, '4');  // 34
+// Ex1addTwoNumbers(3, 'a');  // 3a
+// Ex1addTwoNumbers(3, null);  // 3
+ 
+const res = Ex1addTwoNumbers(3, 5); //By this Ex1addTwoNumbers(3, 5); 8 will print
+console.log("Result: ", res); // as Ex1addTwoNumbers() function returns nothing that's why 'undefined' will store res constant
 
 function addTwoNumbers(number1, number2){
 
@@ -51,7 +61,7 @@ const user = {
 }
 
 function handleObject(anyobject){
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    // console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
 // handleObject(user)
@@ -67,4 +77,4 @@ function returnSecondValue(getArray){
 }
 
 // console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+// console.log(returnSecondValue([200, 400, 500, 1000]));
